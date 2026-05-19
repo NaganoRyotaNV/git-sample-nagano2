@@ -1,0 +1,16 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>足し算結果画面</h1>
+    <span th:text="${exam02Form.num1}"></span>+<span
+      th:text="${exam02Form.num2}"
+    ></span
+    >=<span th:text="${exam02Form.result}"></span>
+    <a href="exam02-result2.html" th:href="@{/ex02/output2}">次へ</a>
+  </body>
+</html>

@@ -7,12 +7,12 @@
   </head>
   <body>
     <h1>数字を入れてください</h1>
-    <form action="">
+    <form th:action="@{/ex02/input}" th:object="${exam02Form}" method="post">
       <label for="num1"></label>
-      <input type="text" id="num1" />
+      <input type="text" id="num1" th:field="*{num1}" />
       +
       <label for="num2"></label>
-      <input type="text" id="num2" />
+      <input type="text" id="num2" th:field="*{num2}" />
       <button>足し算を計算する</button>
     </form>
   </body>
