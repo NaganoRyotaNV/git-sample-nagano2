@@ -1,0 +1,15 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form th:action="@{/exam1/name}" th:object="${exam01Form}" method="post">
+      <label for="name"></label>
+      <input type="text" id="name" th:field="*{name}" />
+      <button>送信</button>
+    </form>
+  </body>
+</html>
